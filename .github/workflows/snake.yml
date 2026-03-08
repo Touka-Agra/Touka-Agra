@@ -2,8 +2,8 @@ name: GitHub Snake
 
 on:
   schedule:
-    - cron: '0 0 * * *' # daily update
-  workflow_dispatch:
+    - cron: '0 0 * * *' # runs daily at 00:00 UTC
+  workflow_dispatch: # allows manual trigger
 
 jobs:
   snake:
@@ -16,7 +16,7 @@ jobs:
       - name: Generate GitHub Contribution Snake
         uses: Platane/snk@master
         with:
-          github_user_name: ${{ github.actor }}   # your GitHub username automatically
+          github_user_name: ${{ github.actor }}   # Your GitHub username
           svg_out_path: github-contribution-grid-snake.svg
 
       - name: Commit & Push SVG
