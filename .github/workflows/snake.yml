@@ -24,14 +24,14 @@ jobs:
           gif_out_path: dist/github-contribution-grid-snake.gif
           svg_out_path: dist/github-contribution-grid-snake.svg
 
-      - name: Commit and push changes
+      - name: Commit and Push SVG
         run: |
-          git config --local user.name "${GITHUB_ACTOR}"
-          git config --local user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          if [ -f dist/github-contribution-grid-snake.svg ] || [ -f dist/github-contribution-grid-snake.gif ]; then
-            git add dist/
-            git commit -m "Update GitHub Snake contribution" || echo "No changes to commit"
-            git push origin HEAD
-          else
-            echo "No snake files generated, skipping commit"
-          fi
+            git config --local user.name "${GITHUB_ACTOR}"
+            git config --local user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+            if [ -f dist/github-contribution-grid-snake.svg ]; then
+              git add dist/
+              git commit -m "Update GitHub Snake contribution" || echo "No changes to commit"
+              git push origin HEAD
+            else
+              echo "SVG not generated, skipping commit"
+            fi
