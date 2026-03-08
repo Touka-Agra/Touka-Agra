@@ -1,32 +1,52 @@
-name: GitHub Snake
+# GitHub Action for generating a contribution graph with a snake eating your contributions.
+
+name: Generate Snake
+
+# Controls when the action will run. This action runs every 6 hours.
 
 on:
+  schedule:
+      # every 6 hours
+    - cron: "0 */6 * * *"
+
+# This command allows us to run the Action automatically from the Actions tab.
   workflow_dispatch:
 
+# The sequence of runs in this workflow:
 jobs:
-  snake:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
 
-      - name: Create dist folder
-        run: mkdir -p dist
+    # Checks repo under $GITHUB_WORKSHOP, so your job can access it
+      - uses: actions/checkout@v3
 
-      - name: Generate Snake
-        uses: Platane/snk@v1.2.0
+    # Generates the snake  
+      - uses: Platane/snk@v3
+        id: snake-gif
         with:
-          github_user_name: Touka-Agra
-          svg_out_path: dist/github-contribution-grid-snake.svg
-          gif_out_path: dist/github-contribution-grid-snake.gif
+          github_user_name: ${{ github.repository_owner }}
+          # these next 2 lines generate the files on a branch called "output". This keeps the main branch from cluttering up.
+          outputs: |
+            dist/github-contribution-grid-snake.gif
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+     # show the status of the build. Makes it easier for debugging (if there's any issues).
+      - name: Show build status
+        run: git status
 
-      - name: Commit & push changes
-        run: |
-          git config --local user.name "${GITHUB_ACTOR}"
-          git config --local user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          if [ -f dist/github-contribution-grid-snake.svg ]; then
-            git add dist/
-            git commit -m "Update GitHub Snake contribution" || echo "No changes to commit"
-            git push origin HEAD
-          else
-            echo "SVG not generated, skipping commit"
+      - name: Push new files to output branch 
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          # the output branch we mentioned above
+          target_branch: output
+          build_dir: dist
+          commit_message: Update snake animations
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
