@@ -7,15 +7,15 @@
 
 ## 👩‍💻 About Me
 
-- 🎓 Computer Science senior student at **Cairo University**  
-- 📱 Flutter Mobile Developer  
-- ⚙️ Backend Developer with **Java & Spring Boot**  
-- 🏆 Participated in **ECPC (Egyptian Collegiate Programming Contest)**  
-- 💡 Interested in **Mobile Development, Backend Development, AI, and Problem Solving**
+- Computer Science senior student at **Cairo University**  
+- Flutter Mobile Developer  
+- Backend Developer with **Java & Spring Boot**  
+- Participated in **ECPC (Egyptian Collegiate Programming Contest)**  
+- Interested in **Mobile Development, Backend Development, AI, and Problem Solving**
 
 ## 🛠️ Technical Skills
 
-### 1️⃣ Programming Languages
+### Programming Languages
 <p align="center">
 <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"/>
 <img src="https://img.shields.io/badge/java-0f52ba?style=for-the-badge&logo=java&logoColor=white"/>
@@ -26,20 +26,20 @@
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
 </p>
 
-### 2️⃣ Frameworks
+### Frameworks
 <p align="center">
 <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"/>
 <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"/>
 <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white"/>
 </p>
 
-### 3️⃣ Databases
+### Databases
 <p align="center">
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
 <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black"/>
 </p>
 
-### 4️⃣ AI / Machine Learning
+### AI / Machine Learning
 <p align="center">
 <img src="https://img.shields.io/badge/Machine Learning-800080?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
@@ -48,7 +48,7 @@
 <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white"/>
 </p>
 
-### 5️⃣ Data Analysis
+### Data Analysis
 <p align="center">
 <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white"/>
 <img src="https://img.shields.io/badge/PowerBI-F2C811?style=for-the-badge&logo=power-bi&logoColor=black"/>
@@ -57,7 +57,7 @@
 </p>
 
 
-### 6️⃣ Tools / IDEs
+### Tools / IDEs
 <p align="center">
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
 <img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white"/>
@@ -66,7 +66,7 @@
 <img src="https://img.shields.io/badge/AndroidStudio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white"/>
 </p>
 
-### 7️⃣ Software Development Principles
+### Software Development Principles
 <p align="center">
 <img src="https://img.shields.io/badge/SDLC-0A66C2?style=for-the-badge&logoColor=white"/>
 <img src="https://img.shields.io/badge/SOLID Principles-0A66C2?style=for-the-badge&logoColor=white"/>
